@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="title.css">
+    <style>
+      h3 {
+        background-color:#F2F7F7;
+      }
+      div {
+        font-style:italic;
+        font-size:18px;
+      }
+      #grid {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        margin:30px;
+        padding-left:60px;
+        padding-right:60px;
+      }
+      #grid div {
+        text-align:center;
+      }
+      img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width:340px;
+      }
+      img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+      }
+      @media(max-width:1260px) {
+        #grid {
+          display:block;
+        }
+        #grid div {
+          padding-bottom:30px;
+        }
+      }
+    </style>
+    <!-- 화면최대크기 1366px -->
+    <title>SURANG</title>
+  </head>
+  <body>
+    <a><h6>[home]</h6></a>
+    <h1>SURANG's LIBRARY</h1>
+    <h3>The standard of good things varies from person to person.<br>
+      좋은 것의 기준은 사람마다 다릅니다.</h3>
+    <div id="grid">
+      <div>BOOK<br><br>
+        <a href="BOOK.html" title="click for BOOK"><img src="book.jpg"></a>
+      </div>
+      <div>LYRIC<br><br>
+        <a href="LYRIC.html" title="click for LYRIC"><img src="lyric.jpg"></a>
+      </div>
+      <div>POST<br><br>
+        <a href="POST.html" title="click for POST"><img src="post.jpg"></a>
+      </div>
+    </div><br>
+    <h6>@made by surang</h6>
+  </body>
+</html>
